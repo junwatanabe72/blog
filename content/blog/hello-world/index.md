@@ -1,23 +1,33 @@
 ---
 title: Hello World
-date: "2015-05-01T22:12:03.284Z"
+date: "2020-07-29"
 description: "Hello World"
+tags: ["GatsbyJS","Javascript"]
 ---
 
-This is my first post on my new fake blog! How exciting!
+GatubyJSを使ってブログを書き始めようと思います。
 
-I'm sure I'll write a lot more interesting things in the future.
 
-Oh, and here's a great quote from this Wikipedia on
-[salted duck eggs](https://en.wikipedia.org/wiki/Salted_duck_egg).
 
-> A salted duck egg is a Chinese preserved food product made by soaking duck
-> eggs in brine, or packing each egg in damp, salted charcoal. In Asian
-> supermarkets, these eggs are sometimes sold covered in a thick layer of salted
-> charcoal paste. The eggs may also be sold with the salted paste removed,
-> wrapped in plastic, and vacuum packed. From the salt curing process, the
-> salted duck eggs have a briny aroma, a gelatin-like egg white and a
-> firm-textured, round yolk that is bright orange-red in color.
-bye-bye
+とりあえず、忘れないようにjavascriptのreduceメソッド
+備忘録として。。
 
-![Chinese Salty Egg](./salty_egg.jpg)
+
+```js
+const arr = [0, 1, 2]; 
+const initial = {};
+
+const result = arr.reduce((acc,value, index) => {
+  acc[`number${index}`] = value;
+  return acc;
+}, initial);
+console.log(result)
+//resultの値は、{number0: 0,number1: 1,number2: 2}
+// reduceの第一引数はコールバック関数
+// reduceの第二引数は、reduce一発目のacc
+// reduceの二発目は一発目の戻り値(上の例では、acc==={number0: 0})
+// reduceの二発目は一発目の戻り値(上の例では、acc==={number0: 0,number1: 1})
+// reduceの二発目は一発目の戻り値(上の例では、acc==={number0: 0,number1: 1,number2: 2})
+```
+
+
