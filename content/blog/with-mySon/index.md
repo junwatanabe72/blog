@@ -1,6 +1,6 @@
 ---
 title: Hello Myson
-date: "2020-08-6"
+date: "2020-08-06"
 description: "子供との出会い"
 tags: ["子育"]
 ---
