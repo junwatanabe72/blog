@@ -9,19 +9,26 @@ docker コマンドをいつも忘れてしまうので、
 
 ```shell
 dockerコマンド
+
 # dockerイメージを引張ってくるコマンド。
 docker pull イメージ
+
 # dockerイメージからコンテナを作成するコマンド。（停止状態。）
 docker create イメージ
+
 # docker コンテナを起動させるコマンド
 docker start コンテナ
+
 # pull + create + run を同時に実行するコマンド
 docker run イメージorコンテナ
+
 # docker内部でシェルを操作するコマンド(bashを使える場合。)
 # itを指定しない場合、bashを操作できない。
 docker exec -it コンテナ bin/bash(任意のコマンド)
+
 # docker コンテナを停止させるコマンド
 docker stop コンテナ
+
 # docker コンテナを削除するコマンド
 docker rm コンテナ
 
