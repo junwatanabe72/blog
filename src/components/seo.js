@@ -54,8 +54,8 @@ const SEO = ({ description, lang, meta, title }) => {
           content: `website`,
         },
         {
-          name: "google-site-verification",
-          content: "3eGaPlRpIBlbHrxxUT4lCHHQaAuBCaylwrTfDbhpSqU",
+          name: `google-site-verification`,
+          content: `3eGaPlRpIBlbHrxxUT4lCHHQaAuBCaylwrTfDbhpSqU`,
         },
         // {
         //   name: `twitter:card`,
