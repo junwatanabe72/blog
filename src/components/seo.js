@@ -53,6 +53,10 @@ const SEO = ({ description, lang, meta, title }) => {
           property: `og:type`,
           content: `website`,
         },
+        {
+          name: "google-site-verification",
+          content: "3eGaPlRpIBlbHrxxUT4lCHHQaAuBCaylwrTfDbhpSqU",
+        },
         // {
         //   name: `twitter:card`,
         //   content: `summary`,
