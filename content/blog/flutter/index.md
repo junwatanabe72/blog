@@ -1,6 +1,6 @@
 ---
 title: Flutter
-date: "2021-1-25"
+date: "2021-01-25"
 description: "Flutter公式の翻訳"
 tags: ["Flutter", "dart"]
 ---

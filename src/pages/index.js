@@ -9,7 +9,6 @@ import { rhythm } from "../utils/typography"
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
-
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
@@ -28,7 +27,7 @@ const BlogIndex = ({ data, location }) => {
                   {title}
                 </Link>
               </h3>
-              {/* <small>{node.frontmatter.date}</small> */}
+              <small>{node.frontmatter.date}</small>
             </header>
             <section>
               <p
