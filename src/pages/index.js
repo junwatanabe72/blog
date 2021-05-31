@@ -5,11 +5,12 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
-
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
   return (
+    <OutboundLink href="https://www.gatsbyjs.com/plugins/gatsby-plugin-google-analytics/">
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
       <Bio />
@@ -40,6 +41,7 @@ const BlogIndex = ({ data, location }) => {
         )
       })}
     </Layout>
+  </OutboundLink>
   )
 }
 
